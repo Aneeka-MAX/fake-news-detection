@@ -1,0 +1,69 @@
+{
+  "dataset": {
+    "name": "isot",
+    "n_articles": 20000,
+    "train": 13600,
+    "val": 2400,
+    "test": 4000
+  },
+  "config": {
+    "tfidf_features": 5000,
+    "ppca_components": 150,
+    "pop": 4,
+    "iters": 3,
+    "tune_epochs": 2
+  },
+  "models": {
+    "levy": {
+      "hyperparams": {
+        "lr": 0.0054673328428484266,
+        "units": 97,
+        "dropout": 0.20832365282206405
+      },
+      "convergence": [
+        0.3339104652404785,
+        0.32289859652519226,
+        0.32289859652519226,
+        0.31360191106796265
+      ],
+      "test": {
+        "accuracy": 0.93375,
+        "precision": 0.9392405063291139,
+        "recall": 0.9275,
+        "specificity": 0.94,
+        "tp": 1855,
+        "tn": 1880,
+        "fp": 120,
+        "fn": 145
+      },
+      "val_accuracy": 0.9245833333333333,
+      "seconds": 38.5
+    },
+    "gwo": {
+      "hyperparams": {
+        "lr": 0.01,
+        "units": 34,
+        "dropout": 0.35271095746479914
+      },
+      "convergence": [
+        0.3423325717449188,
+        0.3423325717449188,
+        0.322867751121521,
+        0.322867751121521
+      ],
+      "test": {
+        "accuracy": 0.93525,
+        "precision": 0.9407594936708861,
+        "recall": 0.929,
+        "specificity": 0.9415,
+        "tp": 1858,
+        "tn": 1883,
+        "fp": 117,
+        "fn": 142
+      },
+      "val_accuracy": 0.9266666666666666,
+      "seconds": 64.0
+    }
+  },
+  "default_model": "gwo"
+}

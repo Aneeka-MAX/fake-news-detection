@@ -1,0 +1,13 @@
+venv/
+.venv/
+venv.venv/
+venv312/
+__pycache__/
+*.pyc
+*.csv
+*.keras
+*.npz
+*.joblib
+.vscode/
+*.log
+.env
